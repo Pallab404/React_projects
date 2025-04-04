@@ -2,18 +2,17 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const decreaseHandler=()=>{
+  const[count,setCount] = useState(0);
+
+  function decreaseHandler(){
     setCount(count-1);
   }
-  const increaseHandler=()=>{
+  function increaseHandler(){
     setCount(count+1);
   }
-
-  const resetHandler=()=>{
+  function resetHandler(){
     setCount(0);
   }
-
-  const[count,setCount]=useState(0);
 
 
   return (

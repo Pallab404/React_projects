@@ -50,6 +50,7 @@ function App() {
             
             <textarea onChange={changeHandler} name="comments" value={formData.comments} placeholder='enter your text' className='mt-3 p-[10px] w-[100%] rounded-sm outline-none'></textarea>
 
+            {/* checkbox */}
             <div className='mt-[10px]'>
               <input type="checkbox"
                checked ={formData.isVisible}
